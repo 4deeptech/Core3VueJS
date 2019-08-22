@@ -1,0 +1,74 @@
+{
+   // Use IntelliSense to find out which attributes exist for C# debugging
+   // Use hover for the description of the existing attributes
+   // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+   "version": "0.2.0",
+   "compounds": [
+    {
+        "name": ".NET+Browser",
+        "configurations": [".NET Core Launch Console","Launch Chrome" ]
+    }
+   ],
+   "configurations": [
+        {
+            "name": ".NET Core Launch (web)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/TestProject.Web/bin/Debug/netcoreapp3.0/TestProject.Web.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/TestProject.Web",
+            "stopAtEntry": false,
+            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
+            //"serverReadyAction": {
+            //    "action": "openExternally",
+            //    "pattern": "^\\s*Now listening on:\\s+(https?://\\S+)"                
+            //},
+            "launchBrowser": {
+                "enabled": true
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://*:5000;https://*:5001"
+            },
+            "sourceFileMap": {
+                "/VueApp": "${workspaceFolder}/VueApp"
+            }
+        },
+        {
+            "name": ".NET Core Launch Console",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/TestProject.Web/bin/Debug/netcoreapp3.0/TestProject.Web.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/TestProject.Web",
+            "stopAtEntry": false,
+            "launchBrowser": {
+              "enabled": false
+            },
+            "env": {
+              "ASPNETCORE_ENVIRONMENT": "Development",
+              "ASPNETCORE_URLS": "http://*:5000;https://*:5001"
+            }
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        },
+        {
+            "name": "Launch Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:5000",
+            "webRoot": "${workspaceFolder}",
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "webpack:///./*": "${webRoot}/TestProject.Web/*"
+            }
+        }
+    ]
+}
