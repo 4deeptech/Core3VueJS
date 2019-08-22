@@ -1,2 +1,2 @@
 # Core3VueJS
-VueJS Template Sample running under .NET Core 2 via Remote containers
+VueJS Template Sample running under .NET Core 3 Preview 8 via VSCode Remote containers
