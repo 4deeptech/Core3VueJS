@@ -72,6 +72,9 @@
       "js",
       "vue"
     ],
+    "testPathIgnorePatterns" : [
+      "<rootDir>/VueApp/__tests__/TestCoverage" 
+    ],
     "moduleNameMapper": {
       "^@/(.*)$": "<rootDir>/VueApp/$1"
     },
@@ -87,13 +90,13 @@
       "<rootDir>/VueApp/**/*.{js,vue}",
       "!**/node_modules/**"
     ],
-    "coverageDirectory": "<rootDir>/__tests__/TestCoverage",
+    "coverageDirectory": "<rootDir>/VueApp/__tests__/TestCoverage",
     "coverageThreshold": {
       "global": {
         "branches": 10,
         "functions": 10,
         "lines": 10,
-        "statements": -10
+        "statements": -100
       }
     }
   },
