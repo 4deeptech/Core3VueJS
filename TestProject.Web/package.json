@@ -87,7 +87,7 @@
       "<rootDir>/VueApp/**/*.{js,vue}",
       "!**/node_modules/**"
     ],
-    "coverageDirectory": "<rootDir>/VueApp/__tests__/TestCoverage",
+    "coverageDirectory": "<rootDir>/__tests__/TestCoverage",
     "coverageThreshold": {
       "global": {
         "branches": 10,
