@@ -9,7 +9,8 @@
                 "build",
                 "${workspaceFolder}/TestProject.Web/TestProject.Web.csproj",
                 "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
+                "/consoleloggerparameters:PerformanceSummary;NoSummary",
+                "--no-restore"
             ],
             "problemMatcher": "$msCompile"
         },
