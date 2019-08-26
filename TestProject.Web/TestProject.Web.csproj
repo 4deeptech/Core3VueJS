@@ -30,7 +30,7 @@
     <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js isnt installed or is not on your path VAR." />
 
     <Message Condition="!Exists('node_modules')" Text="Installing packages" />
-    <Exec Condition="!Exists('node_modules')" Command="npm install --production false" />
+    <Exec Condition="!Exists('node_modules')" Command="yarn install" />
 
     <Exec Command="npm run build:dev" />
   </Target>
@@ -43,7 +43,7 @@
     <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js isnt installed or is not on your path VAR." />
 
     <Message Condition="!Exists('node_modules')" Text="Installing packages" />
-    <Exec Condition="!Exists('node_modules')" Command="npm install --production false" />
+    <Exec Condition="!Exists('node_modules')" Command="yarn install" />
 
     <Exec Command="npm run build:prod" />
   </Target>
