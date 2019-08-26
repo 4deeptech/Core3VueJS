@@ -1,6 +1,17 @@
 # Core3VueJS
 VueJS Template Sample running under .NET Core 3 Preview 8 via VSCode Remote containers
 
+# Requirements
+
+Docker Desktop Windows 10(Pro) /MacOS  https://www.docker.com/products/docker-desktop
+
+Visual Studio Code https://code.visualstudio.com/
+
+VSCode Plugins
+
+https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
+https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome
+
 # Docker container and image refresh
 
 run:
