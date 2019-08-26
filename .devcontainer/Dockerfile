@@ -35,6 +35,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 RUN curl -sL https://deb.nodesource.com/setup_11.x  | bash -
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 RUN apt-get -y install yarn nodejs    
 
 RUN dotnet new -i AspNetCore.Vue.TypeScript.Template 
